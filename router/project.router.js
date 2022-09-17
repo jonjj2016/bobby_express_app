@@ -1,10 +1,8 @@
 const express = require('express')
-const { findQuery } = require('../../reqBobby')
+const { findQuery, CRUD } = require('../../reqBobby')
 const Project = require('../Models/Projects')
 
 const router = express.Router()
 
-router.get('/', findQuery(Project), (req, res) => {
-  res.status(200).json(req.Bobby)
-})
+router.get('/', findQuery(Project), CRUD().find)
 module.exports = router
