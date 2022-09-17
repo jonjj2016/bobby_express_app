@@ -4,5 +4,5 @@ const Project = require('../Models/Projects')
 
 const router = express.Router()
 
-router.get('/', findQuery(Project), CRUD().find)
+router.get('/', findQuery(Project), CRUD(Project).find)
 module.exports = router
