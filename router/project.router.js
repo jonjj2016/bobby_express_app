@@ -1,5 +1,5 @@
 const express = require('express')
-const { findQuery, CRUD, getQuery } = require('../../reqBobby')
+const { findQuery, CRUD, getQuery } = require('bobby_query')
 const Project = require('../Models/Projects')
 
 const router = express.Router()

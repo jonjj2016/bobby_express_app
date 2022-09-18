@@ -1,6 +1,6 @@
 const express = require('express')
 const User = require('../Models/User')
-const { findQuery, CRUD, getQuery } = require('../../reqBobby')
+const { findQuery, CRUD, getQuery } = require('bobby_query')
 
 const router = express.Router()
 
